@@ -1,6 +1,6 @@
 language: php
 php:
-	- 5.5
+  - 5.5
 script: true
 after_success:
-	- echo "Good job"
+  - echo "Good Job"
