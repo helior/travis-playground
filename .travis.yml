@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - 0.12
-before_install: bin/travis-before-install.sh
+before_install: bin/travis-helpers.sh
 script: bin/travis-script.sh
 after_success: bin/travis-after-success.sh
 sudo: false

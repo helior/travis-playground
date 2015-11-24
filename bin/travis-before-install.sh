@@ -9,7 +9,7 @@ else
 fi
 
 
-if isPushFrom 'dev'; then
+if isOnBranch 'dev'; then
   echo "THIS IS A PUSH FROM DEV"
 else
   echo "THIS IS NOT A PUSH FROM DEV"

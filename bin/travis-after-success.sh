@@ -1,5 +1,6 @@
 #!/bin/bash
 set -ev
 
-echo "Running After Success.."
-true
+if isOnBranch "dev"; then
+  echo "Run auto-version/release"
+fi
