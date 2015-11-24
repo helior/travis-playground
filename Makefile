@@ -3,6 +3,6 @@ install:
 test:
 	npm test
 release:
-	npm version patch -m "v%s \n [ci skip]"
+	npm version patch -m $'v%s \n\n [ci skip]'
 
 .PHONY: test
