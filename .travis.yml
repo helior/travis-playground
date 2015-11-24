@@ -5,5 +5,5 @@ script: bin/travis-script.sh
 after_success: bin/travis-after-success.sh
 sudo: false
 cache:
-	directories:
-	- node_modules
+  directories:
+    - node_modules
