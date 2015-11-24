@@ -1,6 +1,9 @@
 language: node_js
 node_js:
 - 0.12
+branches:
+  only:
+    - dev
 script: bin/travis-script.sh
 after_success: bin/travis-after-success.sh
 sudo: false
