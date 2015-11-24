@@ -1,4 +1,5 @@
 #!/bin/bash
+source bin/travis-helpers.sh
 set -ev
 
 export
