@@ -1,6 +1,5 @@
 git config --local user.name "helior"
 git config --local user.email "me@helior.info"
-git config --local push.default simple
 
 message="v%s"
 message=$'$message\n\n[skip ci]'
