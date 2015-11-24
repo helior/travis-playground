@@ -1,6 +1,9 @@
-language: php
-php:
-  - 5.5
-script: true
-after_success:
-  - echo "Good Job"
+language: node_js
+node_js:
+- 0.12
+script: bin/travis-script.sh
+after_success: bin/travis-after-success.sh
+sudo: false
+cache:
+	directories:
+	- node_modules
