@@ -1,7 +1,16 @@
 #!/bin/bash
 
-exit 0;
-# skip a push from within a PR
-# if [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "${TRAVIS_BRANCH}" != "dev" ]; then
-#   exit 1;
-# fi
+source ./bin/travis-helpers.sh
+
+if isPullRequest ; then
+  echo "THIS IS A PULL REQUEST"
+else
+  echo "THIS IS NOT A PULL REQUEST"
+fi
+
+
+if isPushFrom 'dev'; then
+  echo "THIS IS A PUSH FROM DEV"
+else
+  echo "THIS IS NOT A PUSH FROM DEV"
+fi
