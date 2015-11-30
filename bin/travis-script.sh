@@ -10,6 +10,6 @@ if isPullRequest; then
   make test
 
 elif isOnBranch "master" && ! isPullRequest && ! GIT_HEAD_TAG; then
-  echo "Run auto-version/release"
-  make release
+  echo "Run auto version-bumping"
+  make version
 fi

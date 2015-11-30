@@ -4,7 +4,7 @@ test:
 	npm test
 package:
 	bin/package.sh
-release:
+version:
 	bin/version-bump.sh
 clean:
 	rm playground.tar.gz
