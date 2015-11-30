@@ -7,5 +7,5 @@ package:
 version:
 	bin/version-bump.sh
 clean:
-	rm playground.tar.gz
+	rm -f playground.tar.gz
 .PHONY: test
