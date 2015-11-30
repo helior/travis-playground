@@ -2,7 +2,10 @@ install:
 	npm install
 test:
 	npm test
-release:
+package:
+	bin/package.sh
+version:
 	bin/version-bump.sh
-
+clean:
+	rm playground.tar.gz
 .PHONY: test
