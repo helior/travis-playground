@@ -8,4 +8,8 @@ export
 if isPullRequest; then
   echo 'Run tests....'
   make test
+
+elif isOnBranch "master" && ! isPullRequest; then
+  echo "Run auto-version/release"
+  make release
 fi

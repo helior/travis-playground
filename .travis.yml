@@ -1,9 +1,8 @@
+sudo: false
 language: node_js
 node_js:
 - 0.12
-script: ./bin/travis-script.sh
-after_success: ./bin/travis-after-success.sh
-sudo: false
 cache:
   directories:
     - node_modules
+script: ./bin/travis-script.sh
