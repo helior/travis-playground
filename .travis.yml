@@ -6,3 +6,8 @@ cache:
   directories:
     - node_modules
 script: ./bin/travis-script.sh
+before_deploy:
+  - make clean
+  - make package
+deploy:
+  provider: releases
