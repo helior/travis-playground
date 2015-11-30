@@ -1,6 +1,6 @@
 {
   "name": "travis-playground",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "scripts": {
     "test": "echo 'TODO' && exit 0"
   },
