@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git config --local user.name "helior"
 git config --local user.email "me@helior.info"
 
