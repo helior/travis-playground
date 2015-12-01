@@ -9,7 +9,7 @@ if isPullRequest; then
   echo 'Run tests....'
   make test
 
-elif isOnBranch "master" && ! isPullRequest && [ "$GIT_HEAD_TAG" = 0 ]; then
+elif isOnBranch "master" && ! isPullRequest && [ $GIT_HEAD_TAG -eq 0 ]; then
   echo "Run auto version-bumping"
   make version
 fi
